@@ -3,8 +3,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import { BurgerIcon } from '../Icons/BurgerIcon'
 import { CloseNavIcon } from '../Icons/CloseNavIcon'
 import Link from 'next/link'
-import { LogoDark } from '../UI/LogoDark'
+import { Logo } from '../UI/Logo'
 import { usePathname } from 'next/navigation'
+import LogoDarkIcon from '../../../public/assets/shared/desktop/logo-dark.png'
 
 const navItems = [
 	['our company', '/about'],
@@ -28,7 +29,7 @@ export const Mobile = () => {
 	return (
 		<div className=' realtive md:hidden'>
 			<div className='flex items-center justify-between '>
-				<LogoDark />
+				<Logo image={LogoDarkIcon} />
 				<button onClick={showNav}>{isActive ? <CloseNavIcon /> : <BurgerIcon />}</button>
 			</div>
 			<div
