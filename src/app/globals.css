@@ -12,3 +12,7 @@ body {
 	height: 100svh;
 }
 
+.transition-right{
+	transition-property: right;
+	transition-duration: 300ms;
+}
