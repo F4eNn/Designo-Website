@@ -8,7 +8,7 @@ export const Hero = () => {
 	return (
 		<HeroCard>
 			<div className='relative  z-0 lg:flex lg:items-start lg:justify-between'>
-				<div className='text-center w-full max-w-[375px]  mx-auto lg:max-w-[400px] lg:text-left xl:max-w-[500px]'>
+				<div className='text-center w-full max-w-[375px]  mx-auto lg:max-w-[400px] lg:text-left xl:max-w-[500px]  '>
 					<h1 className='text-3xl md:text-4xl lg:text-[2.5rem] xl:text-5xl'>
 						Award-winning custom designs and digital branding solutions
 					</h1>
@@ -21,10 +21,10 @@ export const Hero = () => {
 						url='/about'
 					/>
 				</div>
-				<div className='w-20 h-20 absolute top-0 left-0 -z-10  md:left-1/3'>
+				<div className='absolute top-0 left-0 -z-10  md:left-1/3 lg:top-[-150px] lg:left-2/4'>
 					<CircleHomePattern />
 				</div>
-				<div className='relative  w-[550px] left-1/2 -translate-x-1/2 aspect-[.8] mb-[-330px] mt-[-55px] -z-10  lg:left-0 lg:mb-[-225px] lg:translate-x-0 lg:-mt-[129px] '>
+				<div className='relative  w-[550px] left-1/2 -translate-x-1/2 aspect-[.8] mb-[-330px] mt-[-55px] -z-10 xl:w-[700px] lg:left-0 lg:mb-[-325px] lg:translate-x-0 lg:-mt-[129px] xl:-mt-[165px] xl:-mb-[450px] '>
 					<Image
 						src={heroPhone}
 						fill
