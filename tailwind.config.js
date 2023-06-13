@@ -17,6 +17,17 @@ module.exports = {
 				'light-grey': '#f1f3f5',
 			},
 		},
+		backgroundImage: {
+			app_design_mobile: "url('/assets/home/mobile/image-app-design.jpg')",
+			app_design_tablet: "url('/assets/home/tablet/image-app-design.jpg')",
+			app_design_desktop: "url('/assets/home/desktop/image-app-design.jpg')",
+			graphic_design_mobile: "url('/assets/home/mobile/image-graphic-design.jpg')",
+			graphic_design_tablet: "url('/assets/home/tablet/image-graphic-design.jpg')",
+			graphic_design_desktop: "url('/assets/home/desktop/image-graphic-design.jpg')",
+			web_design_mobile: "url('/assets/home/mobile/image-web-design.jpg')",
+			web_design_tablet: "url('/assets/home/tablet/image-web-design.jpg')",
+			web_design_desktop: "url('/assets/home/desktop/image-web-design-large.jpg')",
+		},
 	},
 	plugins: [],
 }
