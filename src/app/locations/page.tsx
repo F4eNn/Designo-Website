@@ -2,7 +2,7 @@ import React from 'react'
 
 const LocationPage = () => {
   return (
-    <div>LocationPage</div>
+    <div className='mb-20'>LocationPage</div>
   )
 }
 
