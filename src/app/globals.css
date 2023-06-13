@@ -12,7 +12,15 @@ body {
 	height: 100svh;
 }
 
-.transition-right{
+.transition-right {
 	transition-property: right;
 	transition-duration: 300ms;
 }
+.image {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
