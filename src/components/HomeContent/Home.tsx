@@ -1,7 +1,7 @@
 import React from 'react'
 import { Hero } from './Hero'
 import { Wrapper } from '../UI/Wrapper'
-import { Desings } from './Designs/Desings'
+import { Desings } from './Desings'
 
 export const Home = () => {
 	return (
