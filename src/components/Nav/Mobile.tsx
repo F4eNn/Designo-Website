@@ -41,7 +41,7 @@ export const Mobile = () => {
 				<ul className='uppercase text-white bg-black w-full px-5 py-10 font-normal flex flex-col gap-4 text-lg duration-300'>
 					{navItems.map(([title, url], index) => (
 						<li key={index}>
-							<Link href={url}>{title}</Link>
+							<Link rel='preload' href={url}>{title}</Link>
 						</li>
 					))}
 				</ul>
