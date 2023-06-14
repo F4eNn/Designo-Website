@@ -31,6 +31,7 @@ export const Hero = () => {
 						alt='phone image'
 					/>
 				</div>
+				
 			</div>
 		</HeroCard>
 	)
