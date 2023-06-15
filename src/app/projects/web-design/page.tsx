@@ -1,5 +1,5 @@
 import { Wrapper } from '@/components/UI/Wrapper'
-import { WebDesign } from '@/components/content/WebDesign'
+import { WebDesign } from '@/components/content/Projects/WebDesign'
 import React from 'react'
 
 const WebDesignPage = () => {

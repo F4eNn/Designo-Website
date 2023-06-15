@@ -1,7 +1,7 @@
 import React from 'react'
-import { DesignProject } from '../UI/DesignProject'
-import { ProjectCard } from '../UI/ProjectCard'
-import { DesignItem } from '../UI/DesignItem'
+import { DesignProject } from '../../UI/DesignProject'
+import { ProjectCard } from '../../UI/ProjectCard'
+import { DesignItem } from '../../UI/DesignItem'
 const graphicProjects = [
 	{
 		title: 'tim brown',

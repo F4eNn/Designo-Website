@@ -1,8 +1,8 @@
 import React from 'react'
-import { DesignProject } from '../UI/DesignProject'
-import { Wrapper } from '../UI/Wrapper'
-import { ProjectCard } from '../UI/ProjectCard'
-import { DesignItem } from '../UI/DesignItem'
+import { DesignProject } from '../../UI/DesignProject'
+import { Wrapper } from '../../UI/Wrapper'
+import { ProjectCard } from '../../UI/ProjectCard'
+import { DesignItem } from '../../UI/DesignItem'
 const webProject = [
 	{
 		title: 'express',

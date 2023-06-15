@@ -1,7 +1,7 @@
 import React from 'react'
-import { ProjectCard } from '../UI/ProjectCard'
-import { DesignProject } from '../UI/DesignProject'
-import { DesignItem } from '../UI/DesignItem'
+import { ProjectCard } from '../../UI/ProjectCard'
+import { DesignProject } from '../../UI/DesignProject'
+import { DesignItem } from '../../UI/DesignItem'
 const appProjects = [
 	{
 		title: 'airfilter',

@@ -1,11 +1,13 @@
+import { Wrapper } from '@/components/UI/Wrapper'
+import { AboutUs } from '@/components/content/About/AboutUs'
 import React from 'react'
 
 const AboutPage = () => {
-  return (
-    <main>
-      
-    </main>
-  )
+	return (
+		<Wrapper>
+			<AboutUs />
+		</Wrapper>
+	)
 }
 
 export default AboutPage

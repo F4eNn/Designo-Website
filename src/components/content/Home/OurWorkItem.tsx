@@ -8,7 +8,7 @@ type AboutUsProps = {
 	circle: React.ReactNode
 }
 
-export const AboutUsItem = ({ icon, circle, desc, title }: AboutUsProps) => {
+export const OurWorkItem = ({ icon, circle, desc, title }: AboutUsProps) => {
 	return (
 		<div className='flex flex-col items-center gap-9 mt-20 md:flex-row md:justify-center lg:flex-col lg:gap-10 '>
 			<div className='relative'>
