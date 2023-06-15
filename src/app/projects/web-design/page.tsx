@@ -1,4 +1,4 @@
-import { WebDesign } from '@/components/WebDesignContent/WebDesign'
+import { WebDesign } from '@/components/content/WebDesign'
 import React from 'react'
 
 const WebDesignPage = () => {

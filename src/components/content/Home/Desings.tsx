@@ -1,24 +1,25 @@
 import React from 'react'
 
-import { DesignItem } from './DesignItem'
-import { LeafPattern } from '../Icons/LeafPatternt'
+import { DesignItem } from '../../UI/DesignItem'
+import { LeafPattern } from '../../Icons/LeafPatternt'
+const appImages = {
+	mobile: 'bg-app_design_mobile',
+	tablet: 'md:bg-app_design_tablet',
+	desktop: 'lg:bg-app_design_desktop',
+}
+const webImages = {
+	mobile: 'bg-web_design_mobile',
+	tablet: 'md:bg-web_design_tablet',
+	desktop: 'lg:bg-web_design_desktop',
+}
+const graphicImages = {
+	mobile: 'bg-graphic_design_mobile',
+	tablet: 'md:bg-graphic_design_tablet',
+	desktop: 'lg:bg-graphic_design_desktop',
+}
+
 
 export const Desings = () => {
-	const appImages = {
-		mobile: 'bg-app_design_mobile',
-		tablet: 'md:bg-app_design_tablet',
-		desktop: 'lg:bg-app_design_desktop',
-	}
-	const webImages = {
-		mobile: 'bg-web_design_mobile',
-		tablet: 'md:bg-web_design_tablet',
-		desktop: 'lg:bg-web_design_desktop',
-	}
-	const graphicImages = {
-		mobile: 'bg-graphic_design_mobile',
-		tablet: 'md:bg-graphic_design_tablet',
-		desktop: 'lg:bg-graphic_design_desktop',
-	}
 	return (
 		<div className='relative'>
 			<div className='w-11/12 mx-auto mt-32  lg:flex lg:w-full lg:gap-7 lg:h-[600px] '>

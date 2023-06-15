@@ -2,6 +2,7 @@ import React from 'react'
 import { DesignProject } from '../UI/DesignProject'
 import { Wrapper } from '../UI/Wrapper'
 import { ProjectCard } from '../UI/ProjectCard'
+import { DesignItem } from '../UI/DesignItem'
 const webProject = [
 	{
 		title: 'express',
@@ -34,6 +35,18 @@ const webProject = [
 		image: '/assets/web-design/desktop/image-camp.jpg',
 	},
 ]
+const appImages = {
+	mobile: 'bg-app_design_mobile',
+	tablet: 'md:bg-app_design_tablet',
+	desktop: 'lg:bg-app_design_desktop',
+}
+
+const graphicImages = {
+	mobile: 'bg-graphic_design_mobile',
+	tablet: 'md:bg-graphic_design_tablet',
+	desktop: 'lg:bg-graphic_design_desktop',
+}
+
 export const WebDesign = () => {
 	return (
 		<Wrapper>
@@ -45,6 +58,22 @@ export const WebDesign = () => {
 					/>
 				))}
 			</ProjectCard>
+			<div className='w-11/12 mx-auto mt-40  lg:flex lg:w-full lg:gap-7 lg:h-[450px]'>
+				<div className='w-full'>
+					<DesignItem
+						{...appImages}
+						title='app design'
+						url='/projects/app-design'
+					/>
+				</div>
+				<div className='w-full'>
+					<DesignItem
+						{...graphicImages}
+						title='graphic design'
+						url='/projects/graphic-design'
+					/>
+				</div>
+			</div>
 		</Wrapper>
 	)
 }

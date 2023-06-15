@@ -1,8 +1,8 @@
 import React from 'react'
-import { HeroCard } from '../UI/HeroCard'
-import { HeroLink } from '../UI/HeroLink'
-import { CircleHomePattern } from '../Icons/CircleHomePattern'
-import heroPhone from '../../../public/assets/home/desktop/image-hero-phone.png'
+import { HeroCard } from '../../UI/HeroCard'
+import { HeroLink } from '../../UI/HeroLink'
+import { CircleHomePattern } from '../../Icons/CircleHomePattern'
+import heroPhone from '../../../../public/assets/home/desktop/image-hero-phone.png'
 import Image from 'next/image'
 export const Hero = () => {
 	return (
@@ -31,7 +31,6 @@ export const Hero = () => {
 						alt='phone image'
 					/>
 				</div>
-				
 			</div>
 		</HeroCard>
 	)

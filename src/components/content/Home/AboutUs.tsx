@@ -1,12 +1,12 @@
 import React from 'react'
 import { AboutUsItem } from './AboutUsItem'
-import { FriendlyIcon } from '../Icons/FriendlyIcon'
-import { ResourcefulIcon } from '../Icons/ResourcefulIcon'
-import { PassionateIcon } from '../Icons/PassionateIcon'
-import { AboutUsCircle1 } from '../Icons/AboutUsCircle1'
-import { AboutUsCircle2 } from '../Icons/AboutUsCircle2'
-import { AboutUsCircle3 } from '../Icons/AboutUsCircle3'
-import { LeafPattern } from '../Icons/LeafPatternt'
+import { FriendlyIcon } from '../../Icons/FriendlyIcon'
+import { ResourcefulIcon } from '../../Icons/ResourcefulIcon'
+import { PassionateIcon } from '../../Icons/PassionateIcon'
+import { AboutUsCircle1 } from '../../Icons/AboutUsCircle1'
+import { AboutUsCircle2 } from '../../Icons/AboutUsCircle2'
+import { AboutUsCircle3 } from '../../Icons/AboutUsCircle3'
+import { LeafPattern } from '../../Icons/LeafPatternt'
 const howWeWork = [
 	{
 		icon: <PassionateIcon />,
@@ -35,7 +35,7 @@ export const AboutUs = () => {
 					<AboutUsItem {...item} />
 				</div>
 			))}
-           <div className=' hidden xl:block absolute -right-[200px] -bottom-2/4 -z-10 rotate-180'>
+			<div className=' hidden xl:block absolute -right-[200px] -bottom-2/4 -z-10 rotate-180'>
 				<LeafPattern />
 			</div>
 		</div>

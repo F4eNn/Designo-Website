@@ -1,4 +1,4 @@
-import { AppDesign } from '@/components/AppDesignContent/AppDesign'
+import { AppDesign } from '@/components/content/AppDesign'
 import React from 'react'
 
 const AppDesignPage = () => {

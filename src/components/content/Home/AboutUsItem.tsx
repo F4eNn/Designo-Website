@@ -1,5 +1,5 @@
 import React from 'react'
-import { CircleHomePattern } from '../Icons/CircleHomePattern'
+import { CircleHomePattern } from '../../Icons/CircleHomePattern'
 
 type AboutUsProps = {
 	icon: React.ReactNode
