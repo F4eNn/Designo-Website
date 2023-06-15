@@ -1,11 +1,12 @@
+import { Wrapper } from '@/components/UI/Wrapper'
 import { GraphicDesign } from '@/components/content/GraphicDesign'
 import React from 'react'
 
 const GraphicDesignPage = () => {
 	return (
-		<div>
+		<Wrapper>
 			<GraphicDesign />
-		</div>
+		</Wrapper>
 	)
 }
 

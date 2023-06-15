@@ -1,11 +1,12 @@
+import { Wrapper } from '@/components/UI/Wrapper'
 import { AppDesign } from '@/components/content/AppDesign'
 import React from 'react'
 
 const AppDesignPage = () => {
 	return (
-		<div>
+		<Wrapper>
 			<AppDesign />
-		</div>
+		</Wrapper>
 	)
 }
 

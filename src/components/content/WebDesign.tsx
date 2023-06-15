@@ -49,7 +49,7 @@ const graphicImages = {
 
 export const WebDesign = () => {
 	return (
-		<Wrapper>
+		<>
 			<ProjectCard>
 				{webProject.map((item, index) => (
 					<DesignProject
@@ -58,7 +58,7 @@ export const WebDesign = () => {
 					/>
 				))}
 			</ProjectCard>
-			<div className='w-11/12 mx-auto mt-40  lg:flex lg:w-full lg:gap-7 lg:h-[450px]'>
+			<div className='w-11/12 mx-auto mt-40  lg:flex lg:w-full lg:gap-7 lg:h-[450px] mb-[325px] md:mb-[400px] lg:mb-[350px]'>
 				<div className='w-full'>
 					<DesignItem
 						{...appImages}
@@ -74,6 +74,6 @@ export const WebDesign = () => {
 					/>
 				</div>
 			</div>
-		</Wrapper>
+		</>
 	)
 }

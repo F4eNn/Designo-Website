@@ -1,7 +1,6 @@
 import React from 'react'
 import { ProjectCard } from '../UI/ProjectCard'
 import { DesignProject } from '../UI/DesignProject'
-import { Wrapper } from '../UI/Wrapper'
 import { DesignItem } from '../UI/DesignItem'
 const appProjects = [
 	{
@@ -42,7 +41,7 @@ const webImages = {
 }
 export const AppDesign = () => {
 	return (
-		<Wrapper>
+		<>
 			<ProjectCard>
 				{appProjects.map((item, index) => (
 					<DesignProject
@@ -51,7 +50,7 @@ export const AppDesign = () => {
 					/>
 				))}
 			</ProjectCard>
-			<div className='w-11/12 mx-auto mt-40  lg:flex lg:w-full lg:gap-7 lg:h-[450px]'>
+			<div className='w-11/12 mx-auto mt-40  lg:flex lg:w-full lg:gap-7 lg:h-[450px] mb-[325px] md:mb-[400px] lg:mb-[350px]'>
 				<div className='w-full'>
 					<DesignItem
 						{...graphicImages}
@@ -67,6 +66,6 @@ export const AppDesign = () => {
 					/>
 				</div>
 			</div>
-		</Wrapper>
+		</>
 	)
 }

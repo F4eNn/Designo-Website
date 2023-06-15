@@ -18,7 +18,6 @@ const graphicImages = {
 	desktop: 'lg:bg-graphic_design_desktop',
 }
 
-
 export const Desings = () => {
 	return (
 		<div className='relative'>

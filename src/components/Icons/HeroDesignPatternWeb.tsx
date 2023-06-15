@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const HeroDesignPattern = () => {
+export const HeroDesignPatternWeb = () => {
 	return (
 		<svg
 			width='876'

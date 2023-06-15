@@ -29,13 +29,15 @@ const howWeWork = [
 ]
 export const AboutUs = () => {
 	return (
-		<div className=' relative mt-40 w-11/12 mx-auto lg:flex lg:justify-between'>
-			{howWeWork.map((item, index) => (
-				<div key={index}>
-					<AboutUsItem {...item} />
-				</div>
-			))}
-			<div className=' hidden xl:block absolute -right-[200px] -bottom-2/4 -z-10 rotate-180'>
+		<div className='relative mb-[325px] md:mb-[400px] lg:mb-[350px]'>
+			<div className=' relative mt-40 w-11/12 mx-auto lg:flex lg:justify-between '>
+				{howWeWork.map((item, index) => (
+					<div key={index}>
+						<AboutUsItem {...item} />
+					</div>
+				))}
+			</div>
+			<div className=' hidden lg:block absolute -right-[200px] -bottom-2/4 -z-10 rotate-180'>
 				<LeafPattern />
 			</div>
 		</div>

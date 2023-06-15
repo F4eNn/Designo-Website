@@ -35,7 +35,7 @@ const icons = [
 
 const Footer = () => {
 	return (
-		<div className=' bg-black pb-20'>
+		<div className=' bg-black pb-20 mt-11'>
 			<Wrapper>
 				<GetInTouch />
 				<div className='w-full relative px-4 -mt-[7.5rem]  text-center md:text-left md:flex md:flex-col md:gap-10 md:-mt-[15rem] lg:-mt-[7.5rem]'>

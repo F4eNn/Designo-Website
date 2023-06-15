@@ -5,7 +5,7 @@ import { HeroFooterPattern } from '../Icons/HeroFooterPattern'
 export const GetInTouch = () => {
 	return (
 		<HeroFooter>
-			<div className='absolute left-[40%]  top-[25%]` translate-x-[-40%]  translate-y-[-25%] -z-10'>
+			<div className='absolute left-[40%]  top-[25%] translate-x-[-40%]  translate-y-[-25%] -z-10 '>
 				<HeroFooterPattern />
 			</div>
 			<div className='lg:text-left '>
