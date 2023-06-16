@@ -6,7 +6,7 @@ import { Card } from '@/components/UI/Card'
 import { AboutUsSection } from './AboutUsSection'
 import { Team } from './Team'
 import { Partners } from './Partners'
-import { Location } from '@/components/UI/Location/Location'
+import { LocationLink } from '@/components/UI/Location/LocationLink'
 const aboutItems = {
 	srcSetMobile: '/assets/about/mobile/image-about-hero.jpg',
 	srcSetTablet: '/assets/about/tablet/image-about-hero.jpg',
@@ -55,7 +55,7 @@ export const AboutUs = () => {
 				)}
 			</AboutUsSection>
 			<Team />
-			<Location />
+			<LocationLink />
 			<div className='mb-[400px]'>
 				<Partners />
 			</div>

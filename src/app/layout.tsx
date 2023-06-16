@@ -1,4 +1,5 @@
 import './globals.css'
+
 import { Jost } from 'next/font/google'
 import { Nav } from '@/components/Nav/Nav'
 import Footer from '@/components/Footer/Footer'
