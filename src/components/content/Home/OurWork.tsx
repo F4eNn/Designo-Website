@@ -1,5 +1,5 @@
 import React from 'react'
-import { OurWorkItem } from './OurWorkItem'
+import { LinkItem } from './LinkItem'
 import { FriendlyIcon } from '../../Icons/FriendlyIcon'
 import { ResourcefulIcon } from '../../Icons/ResourcefulIcon'
 import { PassionateIcon } from '../../Icons/PassionateIcon'
@@ -30,10 +30,10 @@ const howWeWork = [
 export const OurWork = () => {
 	return (
 		<div className='relative mb-[325px] md:mb-[400px] lg:mb-[350px]'>
-			<div className=' relative mt-40 w-11/12 mx-auto lg:flex lg:justify-between '>
+			<div className=' relative mt-40 w-11/12 mx-auto lg:flex lg:justify-between lg:gap-14'>
 				{howWeWork.map((item, index) => (
 					<div key={index}>
-						<OurWorkItem {...item} />
+						<LinkItem {...item} flexDirectionMd='md:flex-row' alignTextMd='md:text-left' />
 					</div>
 				))}
 			</div>

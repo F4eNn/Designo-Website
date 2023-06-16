@@ -38,7 +38,7 @@ export const AboutUsSection = ({
 	return (
 		<Card>
 			<div
-				className={` ${bgColor} ${textColor} relative z-0 lg:flex ${desktopFlexRow} md:mb-20 md:rounded-b-2xl overflow-hidden`}>
+				className={` ${bgColor} ${textColor} relative z-0 lg:flex ${desktopFlexRow} md:mb-10 md:rounded-b-2xl overflow-hidden`}>
 				<div className={`relative ${heightMobile} ${heightTablet} ${heightDesktop} lg:w-[40%] `}>
 					<picture>
 						<source

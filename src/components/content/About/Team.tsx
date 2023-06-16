@@ -14,8 +14,8 @@ const aboutTeam = {
 	bgColor: 'bg-very-light-peach',
 	textColor: 'text-black',
 
-	heightMobile: 'h-[350px]',
-	heightTablet: 'md:h-[400px]',
+	heightMobile: 'h-[400px]',
+	heightTablet: 'md:h-[425px]',
 	heightDesktop: 'lg:h-[600px]',
 }
 

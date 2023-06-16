@@ -5,7 +5,7 @@ import { StaticImageData } from 'next/image'
 
 const navItems = [
 	['our company', '/about'],
-	['locations', '/locations'],
+	['locations', '/location'],
 	['contact', '/contact'],
 ]
 

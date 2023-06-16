@@ -14,8 +14,8 @@ const aboutPartners = {
 	bgColor: 'bg-very-light-peach',
 	textColor: 'text-black',
 	desktopFlexRow: 'lg:flex-row-reverse',
-	heightMobile: 'h-[350px]',
-	heightTablet: 'md:h-[400px]',
+	heightMobile: 'h-[400px]',
+	heightTablet: 'md:h-[425px]',
 	heightDesktop: 'lg:h-[600px]',
 }
 

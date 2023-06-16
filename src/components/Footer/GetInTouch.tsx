@@ -22,6 +22,8 @@ export const GetInTouch = () => {
 				</div>
 			</div>
 			<HeroLink
+				textColor='text-black'
+				bgColor='bg-white'
 				content='get in touch'
 				url='/contact'
 			/>

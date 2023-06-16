@@ -17,6 +17,8 @@ export const Hero = () => {
 						and engaging brand experiences. Find out more about our services.
 					</p>
 					<HeroLink
+					textColor='text-black'
+						bgColor='bg-white'
 						content='learn more'
 						url='/about'
 					/>
