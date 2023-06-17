@@ -35,7 +35,7 @@ export const Mobile = () => {
 			<div
 				ref={overlayRef}
 				onClick={closeNav}
-				className={`fixed w-full right-0  top-[56px] h-[calc(100vh-56px)] transition-transform duration-300 bg-black bg-opacity-60 z-20 ${
+				className={`fixed w-full right-0  top-[56px] h-[calc(100vh-56px)] transition-transform duration-300 bg-black bg-opacity-60 z-50 ${
 					isActive ? 'translate-x-0' : 'translate-x-full'
 				}`}>
 				<ul className='uppercase text-white bg-black w-full px-5 py-10 font-normal flex flex-col gap-4 text-lg duration-300'>
