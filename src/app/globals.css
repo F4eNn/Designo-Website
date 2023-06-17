@@ -23,4 +23,8 @@ body {
 	width: auto;
 	height: auto;
 	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-  }
+}
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #e7816b inset; /* zmień kolor tła pola na biały */
+	-webkit-text-fill-color: #fff;
+}

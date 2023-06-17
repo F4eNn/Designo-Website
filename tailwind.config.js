@@ -16,6 +16,7 @@ module.exports = {
 				white: '#ffff',
 				'light-grey': '#f1f3f5',
 				'very-light-peach': '#fdf3f0',
+				placeholder: '#f3bfb5',
 			},
 		},
 		backgroundImage: {
