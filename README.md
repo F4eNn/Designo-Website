@@ -27,9 +27,9 @@
 ![Desktop Contact page](./public/preview.jpg)
 ### Desktop Contact page
 ![Desktop Contact page](./public/Contact-page.png)
-### Desktop Contact page
+### Tablet Home page
 ![Tablet Home page](./public/Home-tablet.png)
-### Mobile app-design page
+### Mobile App-design page
 ![Mobile Home page](./public/AppDesign-page.png)
 
 
