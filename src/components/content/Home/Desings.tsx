@@ -1,7 +1,8 @@
+'use client'
 import React from 'react'
-
 import { DesignItem } from '../../UI/DesignItem'
 import { LeafPattern } from '../../Icons/LeafPatternt'
+import { useInView } from 'react-intersection-observer'
 const appImages = {
 	mobile: 'bg-app_design_mobile',
 	tablet: 'md:bg-app_design_tablet',
@@ -19,8 +20,11 @@ const graphicImages = {
 }
 
 export const Desings = () => {
+	const { ref: designRef, inView: isVisible } = useInView()
 	return (
-		<div className='relative'>
+		<div
+			ref={designRef}
+			className={`relative ${isVisible ? 'designAnimation' : ''}`}>
 			<div className='w-11/12 mx-auto mt-32  lg:flex lg:w-full lg:gap-7 lg:h-[600px] '>
 				<div className='w-full'>
 					<DesignItem
@@ -46,7 +50,7 @@ export const Desings = () => {
 					</div>
 				</div>
 			</div>
-			<div className=' hidden xl:block absolute -left-[200px] -top-3/4 -z-10'>
+			<div className=' hidden xl:block absolute -left-[200px] -top-3/4 -z-20'>
 				<LeafPattern />
 			</div>
 		</div>

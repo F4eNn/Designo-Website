@@ -1,3 +1,4 @@
+
 import { ErrorIcon } from '@/components/Icons/ErrorIcon'
 import { useInput } from '@/hooks/useInput'
 import { FormEvent, forwardRef, useState } from 'react'
@@ -14,7 +15,6 @@ const SnackbarAlert = forwardRef<HTMLDivElement, AlertProps>(function SnackbarAl
 		/>
 	)
 })
-
 export const Form = () => {
 	const [open, setOpen] = useState(false)
 	const [isFormValid, setIsFormValid] = useState(false)
@@ -67,7 +67,6 @@ export const Form = () => {
 		setIsFormValid(false)
 		e.preventDefault()
 		if (isNameValid && isEmailValid && isPhoneValid) {
-			console.log('wysłano')
 			clearNameField('')
 			clearEmailField('')
 			clearPhoneField('')
@@ -140,7 +139,6 @@ export const Form = () => {
 				className='rounded-md bg-white text-black py-3 px-12 uppercase mx-auto text-center text-[.8rem] hover:bg-light-peach hover:text-white transition-colors duration-300 md:ml-auto md:mx-0'>
 				Submit
 			</button>
-
 			{isFormValid && (
 				<Snackbar
 					open={open}

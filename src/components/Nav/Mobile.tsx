@@ -7,17 +7,24 @@ import { Logo } from '../UI/Logo'
 import { usePathname } from 'next/navigation'
 import LogoDarkIcon from '../../../public/assets/shared/desktop/logo-dark.png'
 
-const navItems = [
-	['our company', '/about'],
-	['locations', '/location'],
-	['contact', '/contact'],
-]
 export const Mobile = () => {
+	const navItems = [
+		['our company', '/about'],
+		['locations', '/location'],
+		['contact', '/contact'],
+	]
 	const [isActive, setIsActive] = useState(false)
 	const overlayRef = useRef(null)
 	const currentPathname = usePathname()
 	const showNav = () => {
 		setIsActive(prev => !prev)
+		const body = document.querySelector('body')!
+		if (!isActive) {
+			body.style.overflow = 'hidden'
+			return
+		} else {
+			body.style.overflowY = 'scroll'
+		}
 	}
 	const closeNav = (e: React.MouseEvent<HTMLDivElement>) => {
 		const target = e.target as HTMLDivElement

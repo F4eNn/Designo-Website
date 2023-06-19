@@ -32,7 +32,6 @@ export const LocationMap = ({
 	return (
 		<div className={`w-full  mb-20  md:flex md:flex-col md:gap-5 ${flexDirection} lg:gap-8 lg:mb-8 `}>
 			<div className='w-full h-[350px] md:rounded-2xl overflow-hidden lg:w-2/3 lg:h-[400px]'>
-				
 				{isLoading && (
 					<div className='flex justify-center items-center h-full'>
 						<CircularProgress

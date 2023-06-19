@@ -58,7 +58,7 @@ export const AboutUsSection = ({
 					</picture>
 				</div>
 				<div className='px-5 py-20 text-center w-full mx-auto max-w-[600px]  md:py-16 lg:text-left lg:w-[50%] lg:max-w-[725px] lg:my-auto '>
-					<h1 className={`text-4xl mb-5 md:text-5xl md:mb-8 font-[500]   ${titleSizeDesktops} ${titleColor}`}>
+					<h1 className={`text-4xl mb-5 md:text-5xl md:mb-8 font-[500] ${titleSizeDesktops} ${titleColor}`}>
 						{title}
 					</h1>
 					<div className='text-sm md:text-base xl:text-lg '>

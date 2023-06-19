@@ -28,3 +28,18 @@ input:-webkit-autofill {
 	-webkit-box-shadow: 0 0 0 30px #e7816b inset; /* zmień kolor tła pola na biały */
 	-webkit-text-fill-color: #fff;
 }
+@media (max-width: 1024px) {
+	.designAnimation {
+		animation-duration: 1s;
+		animation-name: design;
+	}
+}
+
+@keyframes design {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

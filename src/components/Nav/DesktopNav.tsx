@@ -3,24 +3,21 @@ import Link from 'next/link'
 import { Logo } from '../UI/Logo'
 import { StaticImageData } from 'next/image'
 
-const navItems = [
-	['our company', '/about'],
-	['locations', '/location'],
-	['contact', '/contact'],
-]
-
 type DesktopProps = {
 	logo: StaticImageData
-	color: 'white'| 'black'
+	color: 'white' | 'black'
 }
 
-export const DesktopNav = ({ logo,color }: DesktopProps) => {
-
+export const DesktopNav = ({ logo, color }: DesktopProps) => {
+	const navItems = [
+		['our company', '/about'],
+		['locations', '/location'],
+		['contact', '/contact'],
+	]
 	const fontColor = {
 		white: 'text-white',
-		black: 'text-black'
+		black: 'text-black',
 	}
-
 
 	return (
 		<div className='flex justify-between items-center max-md:hidden py-6'>
@@ -30,7 +27,11 @@ export const DesktopNav = ({ logo,color }: DesktopProps) => {
 					<li
 						key={index}
 						className={`relative after:content-[""] ${fontColor[color]} after:absolute after:left-0 after:bottom-0 after:w-5  after:h-[1px] after:bg-light-peach hover:after:w-full after:duration-300 xl:text-lg`}>
-						<Link rel='prelaod' href={url}>{title}</Link>
+						<Link
+							rel='prelaod'
+							href={url}>
+							{title}
+						</Link>
 					</li>
 				))}
 			</ul>

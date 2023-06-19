@@ -60,7 +60,7 @@ const Footer = () => {
 						</div>
 						<div className='flex gap-4 justify-center my-12  md:self-end md:my-0'>
 							{icons.map((item, index) => (
-								<button key={index}>{item}</button>
+								<button aria-label='social media' key={index}>{item}</button>
 							))}
 						</div>
 					</div>

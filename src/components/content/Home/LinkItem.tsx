@@ -12,7 +12,7 @@ type AboutUsProps = {
 export const LinkItem = ({ icon, circle, desc, title, flexDirectionMd, alignTextMd }: AboutUsProps) => {
 	return (
 		<div
-			className={`flex flex-col items-center gap-9 mt-20 ${flexDirectionMd} md:justify-center lg:flex-col lg:gap-10  `}>
+			className={`flex flex-col items-center gap-9 mt-20 ${flexDirectionMd} md:justify-center lg:flex-col lg:gap-10 `}>
 			<div className='relative'>
 				{circle}
 				<div className='absolute left-0 top-0'>{icon}</div>
