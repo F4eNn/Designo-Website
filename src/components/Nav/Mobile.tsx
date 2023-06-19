@@ -8,7 +8,6 @@ import { usePathname } from 'next/navigation'
 import LogoDarkIcon from '../../../public/assets/shared/desktop/logo-dark.png'
 
 export const Mobile = () => {
-	const body = document.querySelector('body')!
 	const navItems = [
 		['our company', '/about'],
 		['locations', '/location'],
@@ -19,6 +18,7 @@ export const Mobile = () => {
 	const currentPathname = usePathname()
 
 	const showNav = () => {
+		const body = document.querySelector('body')!
 		setIsActive(prev => !prev)
 		console.log(!isActive)
 		if (!isActive) {
@@ -26,6 +26,7 @@ export const Mobile = () => {
 		}
 	}
 	const closeNav = (e: React.MouseEvent<HTMLDivElement>) => {
+		const body = document.querySelector('body')!
 		const target = e.target as HTMLDivElement
 		body.style.overflowY = 'scroll'
 		if (target === overlayRef.current) {
