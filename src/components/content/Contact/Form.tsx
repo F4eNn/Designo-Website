@@ -1,11 +1,33 @@
 import { ErrorIcon } from '@/components/Icons/ErrorIcon'
 import { useInput } from '@/hooks/useInput'
-import { FormEvent } from 'react'
+import { FormEvent, forwardRef, useState } from 'react'
 
-import React from 'react'
 import { Input } from './Input'
+import { Snackbar, Alert, AlertProps } from '@mui/material'
+
+const SnackbarAlert = forwardRef<HTMLDivElement, AlertProps>(function SnackbarAlert(props, ref) {
+	return (
+		<Alert
+			elevation={6}
+			ref={ref}
+			{...props}
+		/>
+	)
+})
 
 export const Form = () => {
+	const [open, setOpen] = useState(false)
+	const [isFormValid, setIsFormValid] = useState(false)
+	const openToastHandler = () => {
+		setOpen(true)
+	}
+	const handleCloseToast = (event?: React.SyntheticEvent | Event, reason?: string) => {
+		if (reason === 'clickaway') {
+			return
+		}
+		setOpen(false)
+	}
+
 	const {
 		enteredValue: enteredName,
 		onChangeInput: onChangeNameInput,
@@ -42,6 +64,7 @@ export const Form = () => {
 	} = useInput(value => value.trim() !== '')
 
 	const submitHandler = (e: FormEvent) => {
+		setIsFormValid(false)
 		e.preventDefault()
 		if (isNameValid && isEmailValid && isPhoneValid) {
 			console.log('wysłano')
@@ -49,6 +72,7 @@ export const Form = () => {
 			clearEmailField('')
 			clearPhoneField('')
 			clearAreaField('')
+			setIsFormValid(true)
 			return
 		}
 		console.log(isNameValid)
@@ -111,10 +135,28 @@ export const Form = () => {
 			</div>
 
 			<button
+				onClick={openToastHandler}
 				type='submit'
 				className='rounded-md bg-white text-black py-3 px-12 uppercase mx-auto text-center text-[.8rem] hover:bg-light-peach hover:text-white transition-colors duration-300 md:ml-auto md:mx-0'>
 				Submit
 			</button>
+
+			{isFormValid && (
+				<Snackbar
+					open={open}
+					autoHideDuration={4000}
+					anchorOrigin={{
+						vertical: 'top',
+						horizontal: 'center',
+					}}
+					onClose={handleCloseToast}>
+					<SnackbarAlert
+						onClose={handleCloseToast}
+						variant='filled'>
+						Submitted Successfully!
+					</SnackbarAlert>
+				</Snackbar>
+			)}
 		</form>
 	)
 }

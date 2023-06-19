@@ -1,6 +1,7 @@
 import { ThreCirclesTeam } from '@/components/Icons/ThreCirclesTeam'
 import dynamic from 'next/dynamic'
 import React from 'react'
+import CircularProgress from '@mui/joy/CircularProgress'
 const MapWithNoSSR = dynamic(() => import('./DynamicMap'), {
 	ssr: false,
 })
@@ -31,7 +32,16 @@ export const LocationMap = ({
 	return (
 		<div className={`w-full  mb-20  md:flex md:flex-col md:gap-5 ${flexDirection} lg:gap-8 lg:mb-8 `}>
 			<div className='w-full h-[350px] md:rounded-2xl overflow-hidden lg:w-2/3 lg:h-[400px]'>
-				{isLoading && <p>Loading...</p>}
+				
+				{isLoading && (
+					<div className='flex justify-center items-center h-full'>
+						<CircularProgress
+							variant='plain'
+							size='lg'
+							thickness={5}
+						/>
+					</div>
+				)}
 				<MapWithNoSSR
 					coordinates={coordinates}
 					isData={isData}
