@@ -7,21 +7,21 @@ import { useGeoLocation } from '@/hooks/useGeoLocation'
 import { Card } from '@/components/UI/Card'
 
 export const Location = () => {
-	const { coordinates: CanadaCoor, isData: isCanada } = useGeoLocation(
-		'toronto',
-		'3886%25Wellington%20Street',
-		'canada'
-	)
-	const { coordinates: AustraliaCoor, isData: isAustralia } = useGeoLocation(
-		'New South Wales',
-		'19%25Balonne%20Street',
-		'australia'
-	)
-	const { coordinates: UnitedKingdomCoor, isData: isUnitedKingdom } = useGeoLocation(
-		'',
-		'13%25Colorado%20Way',
-		'United Kingdom'
-	)
+	const {
+		coordinates: CanadaCoor,
+		isData: isCanada,
+		isLoading: isCanadaLoading,
+	} = useGeoLocation('toronto', '3886%25Wellington%20Street', 'canada')
+	const {
+		coordinates: AustraliaCoor,
+		isData: isAustralia,
+		isLoading: isAustraliaLoading,
+	} = useGeoLocation('New South Wales', '19%25Balonne%20Street', 'australia')
+	const {
+		coordinates: UnitedKingdomCoor,
+		isData: isUnitedKingdom,
+		isLoading: isUKLoading,
+	} = useGeoLocation('', '13%25Colorado%20Way', 'United Kingdom')
 	const canadaItems = {
 		country: 'Canada',
 		office: 'Central',
@@ -54,18 +54,21 @@ export const Location = () => {
 					<LocationMap
 						coordinates={CanadaCoor}
 						isData={isCanada}
+						isLoading={isCanadaLoading}
 						flexDirection='lg:flex-row-reverse'
 						{...canadaItems}
 					/>
 					<LocationMap
 						coordinates={AustraliaCoor}
 						isData={isAustralia}
+						isLoading={isAustraliaLoading}
 						flexDirection='lg:flex-row'
 						{...australiaItems}
 					/>
 					<LocationMap
 						coordinates={UnitedKingdomCoor}
 						isData={isUnitedKingdom}
+						isLoading={isUKLoading}
 						flexDirection='lg:flex-row-reverse'
 						{...unitedKingdomItems}
 					/>

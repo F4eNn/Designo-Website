@@ -1,5 +1,4 @@
 import { ThreCirclesTeam } from '@/components/Icons/ThreCirclesTeam'
-import { UseWindowResize } from '@/hooks/useWindowResize'
 import dynamic from 'next/dynamic'
 import React from 'react'
 const MapWithNoSSR = dynamic(() => import('./DynamicMap'), {
@@ -15,6 +14,7 @@ type LocationMapProps = {
 	email: string
 	phone: string
 	city: string
+	isLoading: Boolean
 }
 export const LocationMap = ({
 	coordinates,
@@ -26,10 +26,12 @@ export const LocationMap = ({
 	office,
 	phone,
 	street,
+	isLoading,
 }: LocationMapProps) => {
 	return (
 		<div className={`w-full  mb-20  md:flex md:flex-col md:gap-5 ${flexDirection} lg:gap-8 lg:mb-8 `}>
 			<div className='w-full h-[350px] md:rounded-2xl overflow-hidden lg:w-2/3 lg:h-[400px]'>
+				{isLoading && <p>Loading...</p>}
 				<MapWithNoSSR
 					coordinates={coordinates}
 					isData={isData}
@@ -48,9 +50,9 @@ export const LocationMap = ({
 						<p>P : {phone}</p>
 						<p>M : {email}</p>
 					</div>
-						<div className='absolute left-0 -bottom-[65%] -z-10 md:bottom-0 lg:bottom-[10%] xl:left-[20px]'>
-							<ThreCirclesTeam />
-						</div>
+					<div className='absolute left-0 -bottom-[65%] -z-10 md:bottom-0 lg:bottom-[10%] xl:left-[20px]'>
+						<ThreCirclesTeam />
+					</div>
 				</div>
 			</div>
 		</div>
