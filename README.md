@@ -9,7 +9,7 @@
   - Now I know that keeping section features in one place is better option than structure which I applied in my project
 
 
-## Your users should be able to:
+## Users should be able to:
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
 - Receive an error message when the contact form is submitted if:
